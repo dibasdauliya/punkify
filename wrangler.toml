@@ -1,8 +1,11 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "steampunk-transformer"
-main = "src/index.js"
+main = "src/worker.js"
 compatibility_date = "2024-10-22"
 compatibility_flags = ["nodejs_compat"]
+
+[ai]
+binding = "AI"
 
 # Workers Logs
 # Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
